@@ -21,6 +21,6 @@ class Task001Test {
     @Test
     fun test_change_text() {
         onView(withText("Hello World!")).check(doesNotExist())
-        onView(withText("I am an Android Developer!")).check(matches(isDisplayed()))
+        onView(withText("Android Developer")).check(matches(isDisplayed()))
     }
 }
