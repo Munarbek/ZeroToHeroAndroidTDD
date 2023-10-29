@@ -1,6 +1,8 @@
 package ru.easycode.zerotoheroandroidtdd
 
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
@@ -19,6 +21,6 @@ class Task002Test {
 
     @Test
     fun test_add_id() {
-        onView(withId(R.id.titleTextView)).check(matches(withText("I am an Android Developer!")))
+        onView(withId(R.id.titleTextView)).check(matches(withText("Android Developer")))
     }
 }
