@@ -27,7 +27,7 @@ class Task003Test {
         onView(
             allOf(
                 withId(R.id.titleTextView),
-                withText("I am an Android Developer!"),
+                withText("Android Developer"),
                 withParent(isAssignableFrom(LinearLayout::class.java))
             )
         ).check(matches(isDisplayed()))
