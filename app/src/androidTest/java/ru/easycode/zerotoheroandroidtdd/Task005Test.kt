@@ -31,7 +31,7 @@ class Task005Test {
             allOf(
                 isAssignableFrom(TextView::class.java),
                 withId(R.id.titleTextView),
-                withText("I am an Android Developer!"),
+                withText("Android Developer!"),
                 withParent(isAssignableFrom(LinearLayout::class.java)),
                 withParent(withId(R.id.rootLayout))
             )
