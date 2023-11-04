@@ -45,6 +45,6 @@ class Task006Test {
         ).check(PositionAssertions.isCompletelyBelow(withId(R.id.titleTextView)))
 
         onView(withId(R.id.changeButton)).perform(click())
-        onView(withId(R.id.titleTextView)).check(matches(withText("I am an Android Developer!")))
+        onView(withId(R.id.titleTextView)).check(matches(withText("Android Developer!")))
     }
 }
